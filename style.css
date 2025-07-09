@@ -1,7 +1,8 @@
 :root {
-    --rojo-base: #a80416;
+    --rojo-base: #f90823;
     --rojo-oscuro: #75020f;
-    --rojo-claro: #ffe9ec;
+    --blanco-claro:  #ffe9ec;
+    --dorado-claro:#c5c184;
     --rojo-transparente: rgba(211, 81, 96, 0.452);
 }
 
@@ -39,7 +40,7 @@ input[type="text"] {
     width: 80%;
     max-width: 300px;
     margin-bottom: 1rem;
-    background-color: var(--rojo-claro);
+    background-color: var(--blanco-claro);
     color: var(--rojo-oscuro);
     font-weight: bold;
 }
@@ -63,7 +64,7 @@ button:hover {
 
 .tarjeta {
     display: none;
-    background: var(--rojo-claro);
+    background: var(--dorado-claro);
     padding: 2rem;
     border-radius: 20px;
     margin-top: 2rem;
