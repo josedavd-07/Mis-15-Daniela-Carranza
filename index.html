@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis 15 Daniela Carranza</title>
+    <!-- Icon website -->
+    <link rel="icon" href="./Assets/img/IconCumpleaños.png" type="image/png" />
+
+    <!-- Fuentes -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;500;700&family=Dancing+Script:wght@600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Script externo -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+
+<body>
+
+    <h1>👑Mis 15 Años👑</h1>
+
+    <div class="contenedor" id="inicio">
+        <input type="text" id="codigo" placeholder="Ingresa tu código de invitación" />
+        <br>
+        <button onclick="verificarCodigo()">Continuar</button>
+    </div>
+
+    <div class="contenedor tarjeta" id="tarjeta" style="display:none;">
+        <div id="contenidoTarjeta">
+            <h2 id="nombreInvitada"></h2>
+            <p id="mensajeInvitacion"></p>
+            <p><strong>📅 Domingo 20 de Julio de 2025</strong></p>
+            <p>📍 Carrera 14 # 11 - 71 , Barrio Gaitán</p>
+            <p>⏰ 3:00 PM</p>
+            <p>✉️ Lluvia de sobres</p>
+            <img class="imagen-tarjeta" id="imagenVestido" src="" alt="Imagen de la invitación" />
+            <div class="descargar">
+                <button onclick="descargarTarjeta()">Descargar tarjeta</button>
+                <button onclick="volverAlInicio()">Ingresar otro código</button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="musicaFondo">
+        <source src="./Assets/audio/No Crezcas Más.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5.
+    </audio>
+
+    <!-- JS -->
+    <script src="index.js"></script>
+</body>
+
+</html>

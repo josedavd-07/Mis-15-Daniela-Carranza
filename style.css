@@ -1,0 +1,114 @@
+:root {
+    --rojo-base: #a80416;
+    --rojo-oscuro: #75020f;
+    --rojo-claro: #ffe9ec;
+    --rojo-transparente: rgba(211, 81, 96, 0.452);
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: url('./Assets/img/Backgroun15.png') no-repeat center center fixed;
+    background-size: cover;
+    /* color: rgb(218, 214, 10); */
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    color: rgb(213, 216, 9);
+    text-shadow: 2px 2px 10px black;
+}
+
+.contenedor {
+    background-color: var(--rojo-transparente);
+    padding: 2rem;
+    border-radius: 20px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 0 40px rgba(117, 2, 15, 0.4);
+}
+
+input[type="text"] {
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    border: 2px solid var(--rojo-oscuro);
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+    background-color: var(--rojo-claro);
+    color: var(--rojo-oscuro);
+    font-weight: bold;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    background-color: var(--rojo-base);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0.5rem;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: var(--rojo-oscuro);
+}
+
+.tarjeta {
+    display: none;
+    background: var(--rojo-claro);
+    padding: 2rem;
+    border-radius: 20px;
+    margin-top: 2rem;
+    box-shadow: 0 10px 40px rgba(117, 2, 15, 0.4);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.tarjeta h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.8rem;
+    color: var(--rojo-base);
+}
+
+.tarjeta p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: var(--rojo-oscuro);
+}
+
+.imagen-tarjeta {
+    margin-top: 1rem;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .contenedor {
+        padding: 1rem;
+    }
+}
+
